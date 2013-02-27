@@ -1,0 +1,17 @@
+<% if user_signed_in? %>
+	<h1>Your signed in bro</h1>
+<% else %>
+<div class="center hero-unit">
+    <h1>What's up David?</h1>
+
+    <h2>
+      I made this is four hours with Ruby of Rails
+      <a href="http://google.com">son</a>
+      boom.
+    </h2>
+
+    <%= link_to "Sign up now!", new_user_registration_path, 
+                                class: "btn btn-large btn-primary" %>
+</div>
+
+<% end %>
